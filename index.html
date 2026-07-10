@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Lens — Event Photography & Organization | Vienna</title>
+    <meta name="description" content="Premium event photography and organization services in Vienna, Austria.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ccircle cx='14' cy='14' r='13' fill='none' stroke='%23c8a96e' stroke-width='1.5'/%3E%3Ccircle cx='14' cy='14' r='6' fill='none' stroke='%23c8a96e' stroke-width='1'/%3E%3Ccircle cx='14' cy='14' r='2' fill='%23c8a96e'/%3E%3C/svg%3E">
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <svg class="preloader-icon" width="56" height="56" viewBox="0 0 28 28" fill="none">
+                <circle cx="14" cy="14" r="13" stroke="#c8a96e" stroke-width="1.5"/>
+                <circle cx="14" cy="14" r="6" stroke="#c8a96e" stroke-width="1"/>
+                <circle cx="14" cy="14" r="2" fill="#c8a96e"/>
+            </svg>
+            <div class="preloader-logo">Soul Lens</div>
+            <div class="preloader-bar"><div class="preloader-fill"></div></div>
+        </div>
+    </div>
+
+    <div class="grain-overlay"></div>
+
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <svg class="logo-mark" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <circle cx="14" cy="14" r="13" stroke="#c8a96e" stroke-width="1.5"/>
+                    <circle cx="14" cy="14" r="6" stroke="#c8a96e" stroke-width="1"/>
+                    <circle cx="14" cy="14" r="2" fill="#c8a96e"/>
+                </svg>
+                <span class="logo-text">Soul Lens</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="#venues" data-i18n="nav.venues">Venues</a></li>
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#contact" class="btn btn-nav" data-i18n="nav.book">Book Now</a></li>
+            </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                <span class="lang-label" data-lang-active>EN</span>
+                <span class="lang-divider">/</span>
+                <span class="lang-label">DE</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-bg">
+                <img src="img/hero.jpg" alt="Elegant wedding venue" class="hero-bg-img">
+                <div class="hero-bg-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-tag" data-reveal>Wien, Österreich</div>
+                <h1 class="hero-title" data-reveal>
+                    <span class="hero-line" data-i18n="hero.line1">Capturing</span>
+                    <span class="hero-line hero-line--accent" data-i18n="hero.line2">Moments</span>
+                    <span class="hero-line" data-i18n="hero.line3">That Matter</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Premium event photography & organization</p>
+                <div class="hero-cta" data-reveal>
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Get a Quote</a>
+                    <a href="#portfolio" class="btn btn-outline" data-i18n="hero.cta2">View Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span data-i18n="hero.scroll">Scroll</span>
+                <div class="hero-scroll-line"></div>
+            </div>
+        </section>
+
+        <section class="stats" id="stats">
+            <div class="container-wide">
+                <div class="stats-row">
+                    <div class="stat" data-reveal>
+                        <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label" data-i18n="stats.events">Events Covered</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat" data-reveal>
+                        <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label" data-i18n="stats.clients">Happy Clients</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat" data-reveal>
+                        <span class="stat-number" data-count="5">0</span><span class="stat-suffix">★</span>
+                        <span class="stat-label" data-i18n="stats.rating">Average Rating</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container-wide">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag" data-i18n="services.tag">What We Do</span>
+                    <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card" data-reveal>
+                        <div class="service-card-img">
+                            <img src="img/service-photo.jpg" alt="Wedding photography" loading="lazy">
+                        </div>
+                        <div class="service-card-content">
+                            <h3 data-i18n="services.photo.title">Event Photography</h3>
+                            <p data-i18n="services.photo.desc">Professional coverage for weddings, corporate events, parties, and celebrations. Authentic moments, artistic style.</p>
+                            <ul class="service-features">
+                                <li data-i18n="services.photo.f1">High-resolution edited photos</li>
+                                <li data-i18n="services.photo.f2">Online gallery for sharing</li>
+                                <li data-i18n="services.photo.f3">Print-ready files</li>
+                                <li data-i18n="services.photo.f4">Same-day preview shots</li>
+                            </ul>
+                            <div class="service-price" data-i18n="services.photo.price">From €450</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card service-card--featured" data-reveal>
+                        <div class="service-badge" data-i18n="services.badge">Most Popular</div>
+                        <div class="service-card-img">
+                            <img src="img/service-bundle.jpg" alt="Complete event package" loading="lazy">
+                        </div>
+                        <div class="service-card-content">
+                            <h3 data-i18n="services.bundle.title">Photography + Planning</h3>
+                            <p data-i18n="services.bundle.desc">The complete package: stunning photography combined with expert event coordination. Stress-free from start to finish.</p>
+                            <ul class="service-features">
+                                <li data-i18n="services.bundle.f1">Full photography coverage</li>
+                                <li data-i18n="services.bundle.f2">Venue sourcing & booking</li>
+                                <li data-i18n="services.bundle.f3">Day-of coordination</li>
+                                <li data-i18n="services.bundle.f4">Vendor management</li>
+                                <li data-i18n="services.bundle.f5">15% bundle discount</li>
+                            </ul>
+                            <div class="service-price" data-i18n="services.bundle.price">From €1,500</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-reveal>
+                        <div class="service-card-img">
+                            <img src="img/service-orga.jpg" alt="Event organization" loading="lazy">
+                        </div>
+                        <div class="service-card-content">
+                            <h3 data-i18n="services.orga.title">Event Organization</h3>
+                            <p data-i18n="services.orga.desc">End-to-end event planning and coordination. We handle the details so you can enjoy the moment.</p>
+                            <ul class="service-features">
+                                <li data-i18n="services.orga.f1">Venue selection & negotiation</li>
+                                <li data-i18n="services.orga.f2">Timeline management</li>
+                                <li data-i18n="services.orga.f3">Vendor coordination</li>
+                                <li data-i18n="services.orga.f4">On-site supervision</li>
+                            </ul>
+                            <div class="service-price" data-i18n="services.orga.price">From €400</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="extras" class="extras">
+            <div class="container-wide">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag" data-i18n="extras.tag">Enhance Your Event</span>
+                    <h2 class="section-title" data-i18n="extras.title">Extra Services</h2>
+                </div>
+
+                <div class="extras-grid">
+                    <div class="extras-category" data-reveal>
+                        <div class="extras-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3 data-i18n="extras.aerial.title">Aerial & Video</h3>
+                        <ul class="extras-list">
+                            <li><span data-i18n="extras.aerial.i1">Drone Photography</span><span class="extras-price">€200–350</span></li>
+                            <li><span data-i18n="extras.aerial.i2">Aerial Video Package</span><span class="extras-price">€400–600</span></li>
+                            <li><span data-i18n="extras.aerial.i3">Full-Day Video Coverage</span><span class="extras-price">€800–1,200</span></li>
+                            <li><span data-i18n="extras.aerial.i4">Same-Day Edit Video</span><span class="extras-price">€300–500</span></li>
+                            <li><span data-i18n="extras.aerial.i5">Live Streaming</span><span class="extras-price">€250–400</span></li>
+                        </ul>
+                    </div>
+                    <div class="extras-category" data-reveal>
+                        <div class="extras-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+                        </div>
+                        <h3 data-i18n="extras.photo.title">Photography Enhancements</h3>
+                        <ul class="extras-list">
+                            <li><span data-i18n="extras.photo.i1">Photo Booth</span><span class="extras-price">€150–250</span></li>
+                            <li><span data-i18n="extras.photo.i2">360° Photo Booth</span><span class="extras-price">€300–450</span></li>
+                            <li><span data-i18n="extras.photo.i3">Same-Day Preview</span><span class="extras-price">€100</span></li>
+                            <li><span data-i18n="extras.photo.i4">Rush Editing</span><span class="extras-price">€100–150</span></li>
+                            <li><span data-i18n="extras.photo.i5">Additional Photographer</span><span class="extras-price">€400–600</span></li>
+                        </ul>
+                    </div>
+                    <div class="extras-category" data-reveal>
+                        <div class="extras-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+                        </div>
+                        <h3 data-i18n="extras.print.title">Print Products</h3>
+                        <ul class="extras-list">
+                            <li><span data-i18n="extras.print.i1">Premium Album</span><span class="extras-price">€250–400</span></li>
+                            <li><span data-i18n="extras.print.i2">Parent Albums (×2)</span><span class="extras-price">€150–200 ea.</span></li>
+                            <li><span data-i18n="extras.print.i3">Canvas Prints</span><span class="extras-price">€80–200</span></li>
+                            <li><span data-i18n="extras.print.i4">Framed Prints</span><span class="extras-price">€100–250</span></li>
+                            <li><span data-i18n="extras.print.i5">Thank You Cards</span><span class="extras-price">€80–120</span></li>
+                        </ul>
+                    </div>
+                    <div class="extras-category" data-reveal>
+                        <div class="extras-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                        </div>
+                        <h3 data-i18n="extras.event.title">Event Extras</h3>
+                        <ul class="extras-list">
+                            <li><span data-i18n="extras.event.i1">Photo Wall / Backdrop</span><span class="extras-price">€150–400</span></li>
+                            <li><span data-i18n="extras.event.i2">Guest Book Station</span><span class="extras-price">€100–180</span></li>
+                            <li><span data-i18n="extras.event.i3">Lighting Setup</span><span class="extras-price">€300–600</span></li>
+                            <li><span data-i18n="extras.event.i4">Corporate Headshots</span><span class="extras-price">€25/person</span></li>
+                            <li><span data-i18n="extras.event.i5">Event Branding</span><span class="extras-price">€150–250</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container-wide">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag" data-i18n="portfolio.tag">Selected Work</span>
+                    <h2 class="section-title" data-i18n="portfolio.title">Our Portfolio</h2>
+                </div>
+                <p class="portfolio-intro" data-i18n="portfolio.intro">Every event tells a story. Here are some we've had the privilege to capture.</p>
+            </div>
+
+            <div class="portfolio-gallery container-wide">
+                <div class="portfolio-item" data-reveal>
+                    <img src="img/portfolio-1.jpg" alt="Wedding at Hofburg Palace" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag" data-i18n="portfolio.tag.wedding">Wedding</span>
+                        <h4>Sarah &amp; Michael</h4>
+                        <p>Hofburg Palace</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="img/portfolio-2.jpg" alt="Corporate Gala" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag" data-i18n="portfolio.tag.corporate">Corporate</span>
+                        <h4>Tech Conference 2024</h4>
+                        <p>MuseumsQuartier</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="img/portfolio-3.jpg" alt="Birthday Celebration" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag" data-i18n="portfolio.tag.private">Private</span>
+                        <h4>50th Anniversary</h4>
+                        <p>Hotel Sacher</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="img/portfolio-4.jpg" alt="Cultural Festival" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag" data-i18n="portfolio.tag.cultural">Cultural</span>
+                        <h4>Vienna Music Fest</h4>
+                        <p>Musikverein</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="img/portfolio-5.jpg" alt="Garden Party" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag" data-i18n="portfolio.tag.outdoor">Outdoor</span>
+                        <h4>Summer Celebration</h4>
+                        <p>Schönbrunn Gardens</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="img/portfolio-6.jpg" alt="Festival lights" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag" data-i18n="portfolio.tag.festival">Festival</span>
+                        <h4>Winter Wonderland</h4>
+                        <p>Rathausplatz</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="img/portfolio-7.jpg" alt="Dinner event" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag" data-i18n="portfolio.tag.corporate">Corporate</span>
+                        <h4>Gala Dinner</h4>
+                        <p>Grand Hotel Wien</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-reveal>
+                    <img src="img/portfolio-8.jpg" alt="Outdoor event" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-tag" data-i18n="portfolio.tag.private">Private</span>
+                        <h4>Garden Soirée</h4>
+                        <p>Augarten</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="venues" class="venues">
+            <div class="container-wide">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag" data-i18n="venues.tag">Where Magic Happens</span>
+                    <h2 class="section-title" data-i18n="venues.title">Vienna Venues We Love</h2>
+                </div>
+
+                <div class="venues-grid">
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/hofburg.jpg" alt="Hofburg Palace Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier">Premium</span>
+                            <h3>Hofburg Palace</h3>
+                            <p data-i18n="venues.hofburg.desc">Historic grandeur in the heart of Vienna. Perfect for elegant weddings and galas.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.hofburg.cap">50–300 guests</span>
+                                <span class="venue-price">€3,000–8,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/schonbrunn.jpg" alt="Schönbrunn Palace Orangerie" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier">Premium</span>
+                            <h3>Schönbrunn Orangerie</h3>
+                            <p data-i18n="venues.schonbrunn.desc">Royal gardens and stunning architecture. Ideal for cultural events.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.schonbrunn.cap">50–200 guests</span>
+                                <span class="venue-price">€2,500–6,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/belvedere.jpg" alt="Belvedere Palace Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier">Premium</span>
+                            <h3>Belvedere Palace</h3>
+                            <p data-i18n="venues.belvedere.desc">Baroque masterpiece with stunning gardens. Perfect for elegant galas and art exhibitions.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.belvedere.cap">30–200 guests</span>
+                                <span class="venue-price">€2,500–7,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/palais-auersperg.jpg" alt="Palais Auersperg Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier">Premium</span>
+                            <h3>Palais Auersperg</h3>
+                            <p data-i18n="venues.auersperg.desc">Elegant baroque palace with magnificent ballrooms. Ideal for exclusive private celebrations and corporate events.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.auersperg.cap">20–200 guests</span>
+                                <span class="venue-price">€2,000–6,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/palais-schwarzenberg.jpg" alt="Palais Schwarzenberg Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier">Premium</span>
+                            <h3>Palais Schwarzenberg</h3>
+                            <p data-i18n="venues.schwarzenberg.desc">Majestic palace with baroque gardens and grand halls. Perfect for prestigious weddings and galas.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.schwarzenberg.cap">30–300 guests</span>
+                                <span class="venue-price">€3,000–8,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/mq.jpg" alt="MuseumsQuartier Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier venue-tier--mid">Mid-Range</span>
+                            <h3>MuseumsQuartier</h3>
+                            <p data-i18n="venues.mq.desc">Modern, artsy backdrop for contemporary events and launches.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.mq.cap">30–500 guests</span>
+                                <span class="venue-price">€1,000–3,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/prater.jpg" alt="Prater Riesenrad Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier venue-tier--mid">Mid-Range</span>
+                            <h3>Prater Venues</h3>
+                            <p data-i18n="venues.prater.desc">Versatile outdoor and indoor spaces with iconic Ferris wheel backdrop.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.prater.cap">100–1000 guests</span>
+                                <span class="venue-price">€800–2,500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/stadtpark.jpg" alt="Stadtpark Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier venue-tier--budget">Budget</span>
+                            <h3>Stadtpark</h3>
+                            <p data-i18n="venues.stadtpark.desc">Vienna's largest park with beautiful green spaces and the iconic Johann Strauss monument.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.stadtpark.cap">Unlimited guests</span>
+                                <span class="venue-price">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/augarten.jpg" alt="Augarten Park Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier venue-tier--budget">Budget</span>
+                            <h3>Augarten</h3>
+                            <p data-i18n="venues.augarten.desc">Historic baroque garden with the Vienna Boys' Choir and porcelain manufactory.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.augarten.cap">Unlimited guests</span>
+                                <span class="venue-price">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/donaupark.jpg" alt="Donaupark Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier venue-tier--budget">Budget</span>
+                            <h3>Donaupark</h3>
+                            <p data-i18n="venues.donaupark.desc">Spacious riverside park with the Danube Tower. Perfect for outdoor events and festivals.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.donaupark.cap">Unlimited guests</span>
+                                <span class="venue-price">Free</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/donauauen.jpg" alt="Donau-Auen National Park" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier venue-tier--budget">Budget</span>
+                            <h3>Donau-Auen</h3>
+                            <p data-i18n="venues.donauauen.desc">Pristine floodplain nature reserve along the Danube. Unique natural backdrop for eco-events.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.donauauen.cap">Up to 200 guests</span>
+                                <span class="venue-price">Free–€500</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-card" data-reveal>
+                        <div class="venue-card-img">
+                            <img src="img/cafe.jpg" alt="Café Central Vienna" loading="lazy">
+                        </div>
+                        <div class="venue-card-content">
+                            <span class="venue-tier venue-tier--budget">Budget</span>
+                            <h3 data-i18n="venues.cafes.title">Historic Cafés</h3>
+                            <p data-i18n="venues.cafes.desc">Authentic Viennese atmosphere. Cozy private rooms for small celebrations.</p>
+                            <div class="venue-meta">
+                                <span data-i18n="venues.cafes.cap">10–50 guests</span>
+                                <span class="venue-price">€200–800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="venue-tips" data-reveal>
+                    <h3 data-i18n="venues.tips.title">Venue Booking Tips</h3>
+                    <div class="tips-row">
+                        <div class="tip">
+                            <span class="tip-icon">📅</span>
+                            <strong data-i18n="venues.tips.lead.label">Lead Time</strong>
+                            <p data-i18n="venues.tips.lead.text">Premium venues: 3–6 months advance</p>
+                        </div>
+                        <div class="tip">
+                            <span class="tip-icon">☀️</span>
+                            <strong data-i18n="venues.tips.peak.label">Peak Season</strong>
+                            <p data-i18n="venues.tips.peak.text">May–Sep weddings, Oct–Dec galas</p>
+                        </div>
+                        <div class="tip">
+                            <span class="tip-icon">💰</span>
+                            <strong data-i18n="venues.tips.offpeak.label">Off-Peak Savings</strong>
+                            <p data-i18n="venues.tips.offpeak.text">Jan–Mar: 15–30% discounts</p>
+                        </div>
+                        <div class="tip">
+                            <span class="tip-icon">📆</span>
+                            <strong data-i18n="venues.tips.weekday.label">Weekday Deals</strong>
+                            <p data-i18n="venues.tips.weekday.text">Mon–Thu: 20–40% cheaper</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-bg">
+                <img src="img/about-bg.jpg" alt="Photographer at work" loading="lazy">
+                <div class="about-bg-overlay"></div>
+            </div>
+            <div class="container-wide">
+                <div class="about-grid">
+                    <div class="about-content" data-reveal>
+                        <span class="section-tag section-tag--light" data-i18n="about.tag">Our Story</span>
+                        <h2 class="section-title section-title--light" data-i18n="about.title">About Soul Lens</h2>
+                        <p data-i18n="about.p1">Born in Vienna, fueled by passion for capturing life's most meaningful moments. Soul Lens isn't just a photography service — it's a promise to tell your story with authenticity and artistry.</p>
+                        <p data-i18n="about.p2">With deep roots in Vienna's vibrant event scene, we bring local expertise, creative vision, and meticulous attention to every event we touch.</p>
+                        <div class="about-values">
+                            <div class="value">
+                                <strong data-i18n="about.v1.label">Authenticity</strong>
+                                <span data-i18n="about.v1.text">Real moments, not posed shots</span>
+                            </div>
+                            <div class="value">
+                                <strong data-i18n="about.v2.label">Excellence</strong>
+                                <span data-i18n="about.v2.text">Every detail matters</span>
+                            </div>
+                            <div class="value">
+                                <strong data-i18n="about.v3.label">Connection</strong>
+                                <span data-i18n="about.v3.text">We listen, we care, we deliver</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container-wide">
+                <div class="section-header" data-reveal>
+                    <span class="section-tag" data-i18n="testimonials.tag">Kind Words</span>
+                    <h2 class="section-title" data-i18n="testimonials.title">What Clients Say</h2>
+                </div>
+                <div class="testimonials-grid" data-reveal>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote data-i18n="testimonials.t1.quote">"Soul Lens captured our wedding perfectly. Every photo tells a story. We couldn't be happier!"</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">A&amp;T</div>
+                            <div>
+                                <strong>Anna &amp; Thomas</strong>
+                                <span data-i18n="testimonials.t1.event">Hofburg Wedding</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote data-i18n="testimonials.t2.quote">"Professional, creative, and so easy to work with. Our corporate event was flawless."</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">LM</div>
+                            <div>
+                                <strong>Lisa M.</strong>
+                                <span data-i18n="testimonials.t2.event">Tech Conference Organizer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <blockquote data-i18n="testimonials.t3.quote">"They handled everything from venue selection to the final photos. Stress-free and stunning!"</blockquote>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">MK</div>
+                            <div>
+                                <strong>Maria K.</strong>
+                                <span data-i18n="testimonials.t3.event">50th Anniversary Party</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-bg">
+                <img src="img/contact-bg.jpg" alt="Elegant venue" loading="lazy">
+                <div class="contact-bg-overlay"></div>
+            </div>
+            <div class="container-wide">
+                <div class="contact-grid">
+                    <div class="contact-info" data-reveal>
+                        <span class="section-tag section-tag--light" data-i18n="contact.tag">Get in Touch</span>
+                        <h2 class="section-title section-title--light" data-i18n="contact.title">Let's Create<br>Something Beautiful</h2>
+                        <p data-i18n="contact.desc">Tell us about your event and we'll get back to you within 24 hours.</p>
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <span>hello@soullens.at</span>
+                            </div>
+                            <div class="contact-detail">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                                <span>+43 XXX XXX XXX</span>
+                            </div>
+                            <div class="contact-detail">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span>Wien, Österreich</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrap" data-reveal>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" data-i18n="contact.form.name">Your Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" data-i18n="contact.form.email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone" data-i18n="contact.form.phone">Phone (optional)</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="date" data-i18n="contact.form.date">Event Date</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventType" data-i18n="contact.form.type">Event Type</label>
+                                <select id="eventType" name="eventType" required>
+                                    <option value="" data-i18n="contact.form.type.placeholder">Select event type...</option>
+                                    <option value="wedding" data-i18n="contact.form.type.wedding">Wedding</option>
+                                    <option value="corporate" data-i18n="contact.form.type.corporate">Corporate Event</option>
+                                    <option value="birthday" data-i18n="contact.form.type.birthday">Birthday / Anniversary</option>
+                                    <option value="cultural" data-i18n="contact.form.type.cultural">Cultural Event</option>
+                                    <option value="other" data-i18n="contact.form.type.other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests" data-i18n="contact.form.guests">Estimated Guests</label>
+                                <input type="number" id="guests" name="guests" min="1" max="1000">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.form.message">Tell Us About Your Event</label>
+                                <textarea id="message" name="message" rows="3" data-i18n-placeholder="contact.form.message.placeholder" placeholder="Describe your vision..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" data-i18n="contact.form.submit">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-wide">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <svg class="logo-mark" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <circle cx="14" cy="14" r="13" stroke="#c8a96e" stroke-width="1.5"/>
+                        <circle cx="14" cy="14" r="6" stroke="#c8a96e" stroke-width="1"/>
+                        <circle cx="14" cy="14" r="2" fill="#c8a96e"/>
+                    </svg>
+                    <span class="logo-text">Soul Lens</span>
+                    <p data-i18n="footer.tagline">Premium event photography & organization in Vienna, Austria</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.services">Services</h4>
+                    <ul>
+                        <li><a href="#services" data-i18n="footer.photo">Photography</a></li>
+                        <li><a href="#services" data-i18n="footer.planning">Event Planning</a></li>
+                        <li><a href="#extras" data-i18n="footer.extras">Extra Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.company">Company</h4>
+                    <ul>
+                        <li><a href="#about" data-i18n="footer.about">About Us</a></li>
+                        <li><a href="#portfolio" data-i18n="footer.portfolio">Portfolio</a></li>
+                        <li><a href="#venues" data-i18n="footer.venues">Venues</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 data-i18n="footer.contact">Get in Touch</h4>
+                    <p>hello@soullens.at</p>
+                    <p>+43 XXX XXX XXX</p>
+                    <p>Wien, Österreich</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Soul Lens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
