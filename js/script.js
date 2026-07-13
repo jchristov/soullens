@@ -7,11 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Preloader
     window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('hidden');
-            document.body.style.overflow = '';
-            initRevealAnimations();
-        }, 1400);
+        preloader.classList.add('hidden');
+        document.body.style.overflow = '';
+        initRevealAnimations();
     });
 
     // Header scroll
